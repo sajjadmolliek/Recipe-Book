@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "brand_name": "StarbucksCoffee",
+    "image": "https://i.ibb.co/gZptXsS/starbucks.jpg"
+  },
+  {
+    "id": 2,
+    "brand_name": "NescafeCoffee",
+    "image": "https://i.ibb.co/5c0Q0rc/FNGHUY-a-IAQ17ln.jpg"
+  },
+  {
+    "id": 3,
+    "brand_name": "PeetsCoffee",
+    "image": "https://i.ibb.co/sWXPzM0/peets-spring-23.webp"
+  },
+  {
+    "id": 4,
+    "brand_name": "GloriaJeansCoffees",
+    "image": "https://i.ibb.co/Ypg0PJv/gloria-jeans.jpg"
+  },
+  {
+    "id": 5,
+    "brand_name": "Folgerscoffee",
+    "image": "https://i.ibb.co/9Z58tcH/images.jpg"
+  },
+  {
+    "id": 6,
+    "brand_name": "CostaCoffee",
+    "image": "https://i.ibb.co/tJDcV8G/costa.jpg"
+  }
+]

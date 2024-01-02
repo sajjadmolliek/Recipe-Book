@@ -1,0 +1,28 @@
+.banner{
+    background-image: url('../assets/banner/banner.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white; 
+}
+.serviceBanner{
+    background-image: url('../assets/banner/bg2.jpg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.galleryBanner{
+    
+    background-color: #211e1e;
+    
+}
+.detailsBanner{
+    background-image: url('../assets/banner/bg2.png');
+    width: 100%;
+    /* height: 40rem; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
