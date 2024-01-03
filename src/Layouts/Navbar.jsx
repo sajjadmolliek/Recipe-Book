@@ -43,20 +43,6 @@ const Navbar = () => {
           Add Product
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to="/myCart"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "text-black font-semibold"
-              : isActive
-              ? " text-[#E23139] underline font-semibold"
-              : "text-[white] font-semibold"
-          }
-        >
-          My Cart
-        </NavLink>
-      </li>
     </>
   );
   return (

@@ -6,11 +6,9 @@ import Login from "../Pages/Login";
 import Resister from "../Pages/Resister";
 import Error from "../Components/Error/Error";
 import AddProduct from "../Pages/AddProduct";
-import MyCart from "../Pages/MyCart";
 import Brands from "../Components/Brands/Brands";
 import Details from "../Components/Details/Details";
 import UpdateProduct from "../Components/UpdateProduct/UpdateProduct";
-import Payments from "../Components/Payments/Payments";
 import Review from "../Components/Review/Review";
 
 const Router = createBrowserRouter([
@@ -32,7 +30,7 @@ const Router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: () =>
-          fetch("https://server-coffee-alpha.vercel.app/addProduct"),
+          fetch("https://server-recipe-book.vercel.app/addRecipe"),
       },
       {
         path: "/review/:id",
@@ -41,14 +39,14 @@ const Router = createBrowserRouter([
             <Review></Review>
           </PrivateRoutes>
         ),
-        loader: ({params}) => fetch(`https://server-coffee-alpha.vercel.app/reviewProducts/${params.id}`),
+        loader: ({params}) => fetch(`https://server-recipe-book.vercel.app/reviewRecipes/${params.id}`),
       },
       {
         path: "/addProducts/:name",
         element: <Brands></Brands>,
         loader: ({ params }) =>
           fetch(
-            `https://server-coffee-alpha.vercel.app/addProducts/${params.name.toLocaleLowerCase()}`
+            `https://server-recipe-book.vercel.app/addRecipes/${params.name.toLocaleLowerCase()}`
           ),
       },
       {
@@ -60,16 +58,6 @@ const Router = createBrowserRouter([
         ),
       },
       {
-        path: "/myCart",
-        element: (
-          <PrivateRoutes>
-            <MyCart></MyCart>
-          </PrivateRoutes>
-        ),
-        loader: () =>
-          fetch("https://server-coffee-alpha.vercel.app/cartProduct"),
-      },
-      {
         path: "/update/:id",
         element: (
           <PrivateRoutes>
@@ -78,12 +66,8 @@ const Router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://server-coffee-alpha.vercel.app/addProduct/${params.id}`
+            `https://server-recipe-book.vercel.app/addRecipe/${params.id}`
           ),
-      },
-      {
-        path: "/pay",
-        element: <PrivateRoutes> <Payments></Payments></PrivateRoutes>,
       },
       {
         path: "/login",

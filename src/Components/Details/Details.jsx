@@ -1,44 +1,17 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-import Swal from "sweetalert2";
 
 const Details = () => {
   const { id } = useParams();
   const products = useLoaderData();
   const [reviewData, setReviewData] = useState();
   const findData = products.find((data) => data._id == id);
-  const { name, brand_name, type, price, description, rating, photo } =
-    findData;
-  const cartid = id;
-  const fullForm = {
-    name,
-    brand_name,
-    type,
-    price,
-    description,
-    rating,
-    photo,
-    cartid,
-  };
 
-  const handleAddToCart = () => {
-    fetch("https://server-coffee-alpha.vercel.app/cartProduct", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(fullForm),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.acknowledged) {
-          Swal.fire("Yeahh!", "Successfully added product", "success");
-        } else {
-          alert("Failed to add the product");
-        }
-      });
-  };
+
+
+
+
 
   useEffect(() => {
     axios
@@ -93,14 +66,7 @@ const Details = () => {
               )}
 
               {/* Review End */}
-              <div className="card-actions justify-end">
-                <button
-                  onClick={handleAddToCart}
-                  className="btn border-0 bg-[#3B1E00] text-white font-bold btn-sm"
-                >
-                  Add to Cart
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>

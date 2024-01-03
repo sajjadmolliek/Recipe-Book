@@ -1,32 +1,32 @@
 [
   {
     "id": 1,
-    "brand_name": "StarbucksCoffee",
+    "brand_name": "Bangali",
     "image": "https://i.ibb.co/gZptXsS/starbucks.jpg"
   },
   {
     "id": 2,
-    "brand_name": "NescafeCoffee",
+    "brand_name": "Traditional",
     "image": "https://i.ibb.co/5c0Q0rc/FNGHUY-a-IAQ17ln.jpg"
   },
   {
     "id": 3,
-    "brand_name": "PeetsCoffee",
+    "brand_name": "Korean",
     "image": "https://i.ibb.co/sWXPzM0/peets-spring-23.webp"
   },
   {
     "id": 4,
-    "brand_name": "GloriaJeansCoffees",
+    "brand_name": "Chaines",
     "image": "https://i.ibb.co/Ypg0PJv/gloria-jeans.jpg"
   },
   {
     "id": 5,
-    "brand_name": "Folgerscoffee",
+    "brand_name": "Indian",
     "image": "https://i.ibb.co/9Z58tcH/images.jpg"
   },
   {
     "id": 6,
-    "brand_name": "CostaCoffee",
+    "brand_name": "Nonevage",
     "image": "https://i.ibb.co/tJDcV8G/costa.jpg"
   }
 ]
