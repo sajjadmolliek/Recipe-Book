@@ -4,9 +4,12 @@ import { useForm } from "react-hook-form";
 import useAxios from "../Hooks/useAxios";
 import { useState } from "react";
 import Select from "react-select";
+import usePrivateHook from "../Hooks/usePrivateHook";
 
 const AddProduct = () => {
   const axiosPublic = useAxios();
+  const {user} =usePrivateHook();
+  const publisher = user.email;
   const [selectedOption, setSelectedOption] = useState(null);
   const options = [
     { value: "bangali", label: "Bangali" },
@@ -29,6 +32,7 @@ const AddProduct = () => {
     const description = data.description;
     const photo = data.photo;
     const fullForm = {
+      publisher,
       name,
       brand_name,
       type,
